@@ -1,4 +1,6 @@
 
+/* the default view is meant for a mobile device (max width of about 640px */
+
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -33,11 +35,13 @@ nav li :focus{
 }
 
 /* style nav bar */
+
 nav li{
     display:inline;
     padding-right:1rem;
     padding-left: 1rem;
-   margin-bottom:0.25rem;
+    
+
     border-right: 1px solid white;
     
   }
@@ -54,6 +58,7 @@ nav li{
     background-color: #00274C;
     padding: 25px 0; 
     text-align: left;
+    
   }
   .open{
     display: grid;
@@ -78,7 +83,7 @@ nav li{
 /* style actual content */
 .container{
     display: grid;
-     grid-template-columns: 1fr 8fr 1fr;
+     grid-template-columns: 1fr 10fr 1fr;
      grid-row-gap: 15px;
      grid-column-gap: 15px;
      
