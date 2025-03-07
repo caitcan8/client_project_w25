@@ -1,9 +1,11 @@
 
-html {
+body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     /* font-weight: 10px; */
     font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    
 }
 /* skip to main button  */
 nav li :hover{
@@ -23,8 +25,9 @@ nav li :focus{
 }
 
 :focus{
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
+    border-color:#FFCB05;
     
 }
 
@@ -60,7 +63,8 @@ nav li{
   .open > h1{
     grid-column: 2/span 1;
     color:white;
-   font-size: xx-large;
+   font-size: x-large;
+   
 
   }
   .open > img{
@@ -71,25 +75,51 @@ nav li{
 /* style actual content */
 .container{
     display: grid;
-     grid-template-columns: 1fr 5fr 1fr;
+     grid-template-columns: 1fr 8fr 1fr;
      grid-row-gap: 15px;
      grid-column-gap: 15px;
+     
 }
-.container > section {
+
+.container > section, .container > section > section {
+    display: block;
     grid-column: 2/span 1;
     color:#00274C;
     display:inline-block;
-          text-align: center;
+          text-align: left;
           justify-content: center;
           align-content: center;
           justify-self: center;
           align-self: center;
+    padding: 10px 0 5px 0;
 
 }
-.container >section > h2{
+.container >section > h2, h2{
 font-size: x-large;
+border-bottom: 0.25rem solid #FFCB05;
+padding-bottom: 0.5rem;
+margin-bottom: 0.5rem;
 }
 img{
-    max-height: 450px;
+    max-width: 80%;
+    height: auto;
+    border-color:#00274C;
+    border-width: 10px;
+    border-style:solid;
+    margin: 0.25rem;
    
 }
+.container > section > ul{
+    padding: 1rem;
+
+}
+h3{
+    text-decoration: underline;
+    text-decoration-color:#00274C;
+    padding: 0.2rem;
+    font-size:large;
+}
+/* .container >section > img, .container >section > section > img{
+    justify-self: center;
+          
+} */
