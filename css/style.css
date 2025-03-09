@@ -89,8 +89,14 @@ nav li{
      grid-column-gap: 15px;
      
 }
+footer{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
 
-.container > section, .container > section > section {
+.container > section, .container > section > section, footer > p {
     display: block;
     grid-column: 2/span 1;
     color:#00274C;
@@ -128,7 +134,5 @@ h3{
     padding: 0.2rem;
     font-size:135%;
 }
-/* .container >section > img, .container >section > section > img{
-    justify-self: center;
-          
-} */
+
+
